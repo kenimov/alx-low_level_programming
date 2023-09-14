@@ -1,12 +1,31 @@
-#include "main.h"
+#include "putchar"
 
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
- */
+  * main - prints a string
+  * ----------------------
+  *
+  * @void: no parameter
+  *
+  * Return: 0
+  *
+ **/
+
 int main(void)
 {
-	_putchar('_');
+	/*
+	 * -- code fails --
+	 *
+	 * char char_array[] = "putchar";
+	 * int index, array_size;
+
+	 * array_size = sizeof(char_array) / sizeof(char);
+	 * for (index = 0; index != array_size; index++)
+	 * {
+	 *	_putchar(char_array[index]);
+	 * }
+	 * _putchar('\n');
+	 * return (0);
+	*/
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
@@ -15,6 +34,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
+	
 	return (0);
 }
